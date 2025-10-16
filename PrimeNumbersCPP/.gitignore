@@ -1,0 +1,35 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+x64/Debug/
+x64/Release/
+Debug/
+Release/
+
+# Visual Studio 2019/2022 cache/options directory
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio Code settings
+.vscode/
+
+# CMake build folder
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
