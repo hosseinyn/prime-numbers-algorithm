@@ -1,18 +1,22 @@
-number = int(input("Number : "))
+from math import sqrt
 
-bigger_than_one = [2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
+number = int(input("Number : "))
 
 
 if number == 1 :
     print("This number is one (not prime and not composite)")
     exit()
+
+elif number == 0:
+    print("This number is zero")
+    exit()
     
 else :
 
-    for i in bigger_than_one:
+    for i in range(2 , int(sqrt(number)) + 1):
         operation = number % i
 
-        if number != i and operation == 0 :
+        if operation == 0 :
             print("this number is a composite number")
             exit()
 

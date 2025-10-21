@@ -1,13 +1,14 @@
+from math import sqrt
+
 number = int(input("Number : "))
 
 if number == 1:
     print("1x1")
     exit()
 
-greater_than_one = [2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
 numbers = []
 
-for i in greater_than_one:
+for i in range(2 , int(sqrt(number)) + 1):
     check = number % i
     if check != 0:
         continue

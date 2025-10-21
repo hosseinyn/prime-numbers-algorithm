@@ -1,3 +1,5 @@
+from math import sqrt
+
 number = input("Numbers (with ,) : ")
 
 numbers = number.split(",")
@@ -6,13 +8,10 @@ can_continue = True
 
 def check_prime_number(number) : 
 
-    bigger_than_one = [2 , 3 , 5 , 7]
-
-
-    for i in bigger_than_one:
+    for i in range(2 , int(sqrt(number)) + 1):
         operation = number % i
 
-        if number != i and operation == 0 :
+        if operation == 0 :
             return False
 
     return True
